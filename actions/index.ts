@@ -40,8 +40,8 @@ const sheetConfigs = [
 ];
 
 const jwt = new JWT({
-    email: googleAuth.client_email,
-    key: googleAuth.private_key.replace(/\\n/g, '\n'),
+    email: process.env.GSHEETS_PRIVATE_KEY,
+    key: process.env.CLIENT_EMAIL.replace(/\\n/g, '\n'),
     scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
