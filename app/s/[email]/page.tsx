@@ -104,8 +104,7 @@ export default function Component({ params }: Props) {
     </div>
   );
 }
-
-export const getSinglePercentage = (quizzes: { quizName: string, marks: number, totalMarks: number}[]) => {
+const getSinglePercentage = (quizzes: { quizName: string, marks: number, totalMarks: number}[]) => {
   let totalAchieved = 0;
   let totalPossible = 0;
 
